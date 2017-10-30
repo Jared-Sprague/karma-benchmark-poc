@@ -1,6 +1,3 @@
-// Karma configuration
-// Generated on Sun Oct 29 2017 01:00:49 GMT-0400 (EDT)
-
 module.exports = function(config) {
   config.set({
 
@@ -48,24 +45,11 @@ module.exports = function(config) {
       // 'https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js',
       'libraries/p5.js',
       'src/util.js', // Code to be benchmarked
-      'src/test.js',
+      // 'src/test.js',
       'bench/**/*.bench.js'
     ],
 
-
-    // list of files to exclude
-    exclude: [
-    ],
-
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-    },
-
-
     // test results reporter to use
-    // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: [
       'benchmark',
@@ -74,29 +58,15 @@ module.exports = function(config) {
     // web server port
     port: 9876,
 
-
     // enable / disable colors in the output (reporters and logs)
     colors: true,
-
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
     logLevel: config.LOG_INFO,
 
-
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
-
-
-    // start these browsers
-    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    // browsers: [
-    //   'Chrome',
-    //   'Firefox',
-    //   'IE',
-    //   // 'Safari',
-    // ],
-
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
